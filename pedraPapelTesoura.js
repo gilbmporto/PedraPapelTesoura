@@ -29,7 +29,19 @@ var escolhaJogadorTxt = document.getElementById('escolhaJogador');
 var escolhaComputadorTxt = document.getElementById('escolhaComputador');
 
 //Resultado do Jogo em Texto
-var resultadoDoJogoTxt = document.getElementById('resultadoEmTexto')
+var resultadoDoJogoTxt = document.getElementById('resultadoEmTexto');
+
+//Contador de Jogos:
+var ContJogos = document.getElementById('totalDeJogos');
+
+//Contador de Empates:
+var ContEmpates = document.getElementById('totalDeEmpates');
+
+//Contador de Vitórias:
+var ContVitorias = document.getElementById('totalDeVitorias');
+
+//Contador de Derrotas:
+var ContDerrotas = document.getElementById('totalDeDerrotas');
 
 botaoTesoura.addEventListener('click', () => {
     botaoTesoura.style.backgroundColor = 'rgb(26, 78, 92)';
@@ -83,29 +95,43 @@ botaoJogar.addEventListener('click', () => {
         escolhaJogadorTxt.innerHTML = `Você escolheu ${nomeEscolhaJogador}!`;
         escolhaComputadorTxt.innerHTML = `O computador escolheu ${nomeEscolhaComputador}!`;
         resultadoDoJogoTxt.innerHTML = 'Empate! 🥸';
+        ContJogos.innerHTML++;
+        ContEmpates.innerHTML++;
     } else if (numEscolhido === 0 && numComputador === 1) {
         escolhaJogadorTxt.innerHTML = `Você escolheu ${nomeEscolhaJogador}!`;
         escolhaComputadorTxt.innerHTML = `O computador escolheu ${nomeEscolhaComputador}!`;
         resultadoDoJogoTxt.innerHTML = 'Você ganhou! 😃';
+        ContJogos.innerHTML++;
+        ContVitorias.innerHTML++;
     } else if (numEscolhido === 0 && numComputador === 2) {
         escolhaJogadorTxt.innerHTML = `Você escolheu ${nomeEscolhaJogador}!`;
         escolhaComputadorTxt.innerHTML = `O computador escolheu ${nomeEscolhaComputador}!`;
         resultadoDoJogoTxt.innerHTML = 'Você perdeu! 🥺';
+        ContJogos.innerHTML++;
+        ContDerrotas.innerHTML++;
     } else if (numEscolhido === 1 && numComputador === 0) {
         escolhaJogadorTxt.innerHTML = `Você escolheu ${nomeEscolhaJogador}!`;
         escolhaComputadorTxt.innerHTML = `O computador escolheu ${nomeEscolhaComputador}!`;
         resultadoDoJogoTxt.innerHTML = 'Você perdeu! 🥺';
+        ContJogos.innerHTML++;
+        ContDerrotas.innerHTML++;
     } else if (numEscolhido === 1 && numComputador === 2) {
         escolhaJogadorTxt.innerHTML = `Você escolheu ${nomeEscolhaJogador}!`;
         escolhaComputadorTxt.innerHTML = `O computador escolheu ${nomeEscolhaComputador}!`;
         resultadoDoJogoTxt.innerHTML = 'Você ganhou! 😃';
+        ContJogos.innerHTML++;
+        ContVitorias.innerHTML++;
     } else if (numEscolhido === 2 && numComputador === 0) {
         escolhaJogadorTxt.innerHTML = `Você escolheu ${nomeEscolhaJogador}!`;
         escolhaComputadorTxt.innerHTML = `O computador escolheu ${nomeEscolhaComputador}!`;
         resultadoDoJogoTxt.innerHTML = 'Você ganhou! 😃';
+        ContJogos.innerHTML++;
+        ContVitorias.innerHTML++;
     } else if (numEscolhido === 2 && numComputador === 1) {
         escolhaJogadorTxt.innerHTML = `Você escolheu ${nomeEscolhaJogador}!`;
         escolhaComputadorTxt.innerHTML = `O computador escolheu ${nomeEscolhaComputador}!`;
         resultadoDoJogoTxt.innerHTML = 'Você perdeu! 🥺';
+        ContJogos.innerHTML++;
+        ContDerrotas.innerHTML++;
     }
 })

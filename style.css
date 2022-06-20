@@ -77,3 +77,29 @@ header {
     text-align: center;
     display: block;
 }
+
+#contar {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-content: space-around;
+    box-sizing: border-box;
+}
+
+.ladoALado {
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flexbox;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
+}
