@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
+
+button {
+    cursor: pointer;
+    transition: 1s;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(42, 32, 180);
+    color: aliceblue;
+    border-radius: 20px;
+    font-family: 'Roboto Serif', serif;
+    z-index: 2;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.inputsFerramentas {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#tesoura-botao,
+#papel-botao,
+#pedra-botao {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(77, 192, 224);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+}
+
+#tesoura-botao:hover,
+#papel-botao:hover,
+#pedra-botao:hover {
+    background-color: rgb(26, 78, 92);
+    color: white;
+}
+
+#jogar-botao {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 20px auto;
+    color: azure;
+    background-color: rgb(51, 140, 223);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+
+#jogar-botao:hover {
+    background-color: rgb(10, 50, 88);
+    width: 120px;
+}
+
+.respostaJogo {
+    font-size: 17px;
+    font-family: 'Roboto Serif', serif;
+    text-align: center;
+    display: block;
+}
