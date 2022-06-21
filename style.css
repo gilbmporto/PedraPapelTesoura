@@ -78,28 +78,36 @@ header {
     display: block;
 }
 
-#contar {
+.contar {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
     justify-content: center;
-    align-content: space-around;
+    align-content: center;
     box-sizing: border-box;
 }
 
 .ladoALado {
-    border: 1px solid black;
-    border-radius: 15px;
     display: flexbox;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 400px;
-    margin: 0 5px;
+    margin: 10px 5px;
     padding: 10px;
     text-align: center;
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
+}
+
+#totalDeJogos,
+#totalDeVitorias,
+#totalDeEmpates,
+#totalDeDerrotas {
+    font-size: 20px;
     font-family: 'Roboto Serif', serif;
 }
